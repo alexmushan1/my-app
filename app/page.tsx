@@ -58,6 +58,17 @@ export default function Home() {
           >
             Documentation
           </a>
+          <div className="relative inline-block">
+            <div className="absolute -left-1 top-1 w-full h-full bg-black/20 rounded-full dark:bg-white/20"></div>
+            <a
+              className="relative flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-transform duration-300 transform translate-x-1 -translate-y-1 hover:-translate-x-1 hover:translate-y-1 bg-white text-black hover:border-transparent hover:bg-[#383838] dark:border-white/[.145] dark:hover:bg-[#ccc] md:w-[158px]"
+              href="https://www.emilybackes.design/#case-study-section"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Emily Backes
+            </a>
+          </div>
         </div>
       </main>
     </div>
