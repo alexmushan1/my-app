@@ -4,17 +4,17 @@ const projects = [
   {
     id: "1",
     title: "Project One",
-    description: "A description of your first project goes here.",
+    description: "Description.",
   },
   {
     id: "2",
     title: "Project Two",
-    description: "A description of your second project goes here.",
+    description: "Description.",
   },
   {
     id: "3",
     title: "Project Three",
-    description: "A description of your third project goes here.",
+    description: "Description.",
   },
 ];
 
