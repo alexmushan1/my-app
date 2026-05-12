@@ -9,7 +9,7 @@ export default function About() {
             About
           </h1>
           <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            This is the about page. Add your content here.
+            This site is used for practice creating sites with Next.js. It shows basic navigation, static pages, and route-generated content.
           </p>
         </div>
         <div className="flex flex-col gap-4 text-base font-medium">
