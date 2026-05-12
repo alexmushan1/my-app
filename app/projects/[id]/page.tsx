@@ -1,7 +1,3 @@
-"use client";
-
-import { useParams } from "next/navigation";
-
 const projectsData: Record<
   string,
   { title: string; description: string; details: string }
@@ -26,9 +22,16 @@ const projectsData: Record<
   },
 };
 
-export default function ProjectDetail() {
-  const params = useParams();
-  const id = params.id as string;
+export function generateStaticParams() {
+  return Object.keys(projectsData).map((id) => ({ id }));
+}
+
+interface ProjectPageProps {
+  params: { id: string };
+}
+
+export default function ProjectDetail({ params }: ProjectPageProps) {
+  const id = params.id;
   const project = projectsData[id];
 
   if (!project) {
