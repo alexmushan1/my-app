@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const projectsData: Record<
   string,
   { title: string; description: string; details: string }
@@ -41,12 +43,12 @@ export default function ProjectDetail({ params }: ProjectPageProps) {
           <h1 className="text-3xl font-semibold text-black dark:text-zinc-50">
             Project Not Found
           </h1>
-          <a
+          <Link
             className="mt-8 flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
             href="/projects"
           >
             Back to Projects
-          </a>
+          </Link>
         </main>
       </div>
     );
